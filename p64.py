@@ -1,0 +1,13 @@
+def calcular_soma(a, b, c):
+    soma = a + b + c
+
+    if soma > 21 and 11 in (a, b, c):
+        soma -= 10
+
+    if soma > 21:
+        return -1
+
+    return soma
+
+
+print(calcular_soma(5, 7, 8))
